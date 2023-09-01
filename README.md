@@ -2,8 +2,6 @@
     pehlicd Homebrew Tap
 </h1>
 
----
-
 <p align="center">
 <a href="https://docs.brew.sh/Taps" target="_blank">Homebrew tap</a> for distributing pehlicd binaries.
 </p>
