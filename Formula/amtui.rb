@@ -3,7 +3,7 @@ class Amtui < Formula
   homepage "https://github.com/pehlicd/amtui"
   version "0.0.2"
   license "MIT"
-  head "https://github.com/pehlicd/amtui.git", :branch => "master"
+  head "https://github.com/pehlicd/amtui.git", branch: "main"
 
   depends_on "go" => :build
 
