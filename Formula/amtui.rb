@@ -10,6 +10,17 @@ class Amtui < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args
+    project = "github.com/pehlicd/amtui"
+    ldflags = %W[
+      -s -w
+      -X #{project}/pkg.versionString=#{version}
+      -X #{project}/pkg.buildCommit=#{Utils.git_head}
+      -X #{project}/pkg.buildDate=#{time.iso8601}
+    ]
+    system "go", "build", *std_go_args(ldflags: ldflags)
+  end
+
+  test do
+    assert_match version.to_s, "#{bin}/amtui --version"
   end
 end
