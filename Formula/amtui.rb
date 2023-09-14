@@ -2,8 +2,8 @@ class Amtui < Formula
   desc "Alertmanager TUI - Your Terminal Companion for Alertmanager"
   homepage "https://github.com/pehlicd/amtui"
   url "https://github.com/pehlicd/amtui.git",
-      tag:      "v0.1.2",
-      revision: "f209acd2bfd89c7e6552a3022a547b3bc71e6790"
+      tag:      "v0.1.3",
+      revision: "175810598a4f2987c8b0e4bb91e2ef27e073e195"
   license "MIT"
   head "https://github.com/pehlicd/amtui.git", branch: "main"
 
