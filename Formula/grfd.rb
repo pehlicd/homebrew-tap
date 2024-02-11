@@ -13,9 +13,9 @@ class Grfd < Formula
     project = "github.com/pehlicd/grfd"
     ldflags = %W[
       -s -w
-      -X #{project}/pkg.versionString=#{version}
-      -X #{project}/pkg.buildCommit=#{Utils.git_head}
-      -X #{project}/pkg.buildDate=#{time.iso8601}
+      -X #{project}/main.versionString=#{version}
+      -X #{project}/main.buildCommit=#{Utils.git_head}
+      -X #{project}/main.buildDate=#{time.iso8601}
     ]
     system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/grfd/grfd.go"
   end
