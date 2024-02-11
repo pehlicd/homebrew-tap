@@ -2,7 +2,7 @@ class Grfd < Formula
   desc "GRFD - Get Ready for Daily"
   homepage "https://github.com/pehlicd/grfd"
   url "https://github.com/pehlicd/grfd.git",
-      tag:      "v0.0.0.",
+      tag:      "v0.0.0",
       revision: "019b149cd7926dc9ebda818cba569f978d316120"
   license "Apache-2.0"
   head "https://github.com/pehlicd/grfd.git", branch: "main"
