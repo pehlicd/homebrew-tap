@@ -17,7 +17,7 @@ class Grfd < Formula
       -X #{project}/pkg.buildCommit=#{Utils.git_head}
       -X #{project}/pkg.buildDate=#{time.iso8601}
     ]
-    system "go", "build", *std_go_args(ldflags: ldflags)
+    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/grfd.go"
   end
 
   test do
