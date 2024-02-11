@@ -3,7 +3,7 @@ class Grfd < Formula
   homepage "https://github.com/pehlicd/grfd"
   url "https://github.com/pehlicd/grfd.git",
       tag:      "v0.0.0",
-      revision: "019b149cd7926dc9ebda818cba569f978d316120"
+      revision: "3738c9b44a50fe6e7b8137293b4a6d633371a108"
   license "Apache-2.0"
   head "https://github.com/pehlicd/grfd.git", branch: "main"
 
