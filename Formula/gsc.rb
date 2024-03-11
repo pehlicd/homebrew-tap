@@ -17,7 +17,7 @@ class Gsc < Formula
       -X main.buildCommit=#{Utils.git_head}
       -X main.buildDate=#{time.iso8601}
     ]
-    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/gsc/gsc.go"
+    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/gsc.go"
   end
 
   test do
